@@ -5,8 +5,6 @@ def extract_and_multiply(filename):
     results = []
     # Updated pattern to strictly match valid mul(X,Y) instructions
     mul_pattern = re.compile(r'mul\((\d{1,3}),(\d{1,3})\)')
-    do_pattern = re.compile(r'do\(\)')
-    dont_pattern = re.compile(r"don't\(\)")
 
     with open(filename, 'r') as file:
         data = file.read()
